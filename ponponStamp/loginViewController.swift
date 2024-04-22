@@ -8,11 +8,25 @@
 import UIKit
 
 class loginViewController: UIViewController {
-
+    @IBOutlet var phoneNumber: UITextField!
+    @IBOutlet var fullName: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        // phoneNumberとfullNameの枠線を黒に設定
+        phoneNumber.layer.borderColor = UIColor.black.cgColor
+        // 枠線の太さを設定
+        phoneNumber.layer.borderWidth = 1.0
+        //角を丸める場合に使用
+        phoneNumber.layer.cornerRadius = 5.0
+        
+        fullName.layer.borderColor = UIColor.black.cgColor
+        // 枠線の太さを設定
+        fullName.layer.borderWidth = 1.0
+        //角を丸める場合に使用
+        fullName.layer.cornerRadius = 5.0
     }
     
 
